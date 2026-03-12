@@ -128,4 +128,76 @@ main p{
 }
 
 
-    
+.segunda_pag{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/*Pag Dois*/
+
+
+/* container dos cards */
+
+.titulo_pagdois{
+    font-size: 2m;
+}
+
+.container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+
+
+
+
+
+.card{
+    width:220px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    display:flex;
+    flex-direction:column;
+}
+
+/* imagem */
+.card img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+}
+
+/* informações */
+.info{
+    padding:15px;
+}
+
+.info h3{
+    margin:0 0 10px 0;
+}
+
+.info p{
+    margin:4px 0;
+    color:#555;
+}
+
+/* botão */
+.botao{
+    margin-top:10px;
+    width:100%;
+    padding:10px;
+    border:none;
+    background:#ff7a00;
+    color:white;
+    font-weight:bold;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.botao:hover{
+    background:#e66d00;
+}
