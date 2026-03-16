@@ -4,11 +4,11 @@
 
 
 :root{
-    --cor1: #348888;
-    --cor2: #22BABB;
-    --cor2: #9EF8EE;
-    --cor3: #FA7F08;
-    --cor4: #F24405;
+    --cor1: #CDD5C6;
+    --cor2: #FBF2ED;
+    --cor2: #B7BCBF;
+    --cor3: #a17658;
+    --cor4: #fac893;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Dogbangy';
@@ -21,7 +21,8 @@
 }
 
 body{
-    background-color: var(--cor1);
+    background-image: linear-gradient(to right, var(--cor2), var(--cor4) );
+    
 }
 
 header{
@@ -29,7 +30,7 @@ header{
     padding-bottom: 10px;
     padding-top: 15px;
     min-height: 150px;
-    background-image: linear-gradient(to right, var(--cor1), var(--cor2) );
+    background-image: linear-gradient(to right, var(--cor2), var(--cor4) );
     
     
     
@@ -51,9 +52,9 @@ header > p{
     font-weight: bold;
 }
 nav{
-    background-color: white;
+    
     padding-bottom: 10px;
-    background-image: linear-gradient(to right, var(--cor1), var(--cor2));
+    
     font-size: 1,5em;
     text-align: center;
     
@@ -62,7 +63,7 @@ nav  a{
      padding-left: 30px;
      text-decoration: none;
      padding: 20px;
-     color: #b65d05;
+     color: var(--cor1);
      font-weight: normal;
      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.788);
      font-family: var(--fonte-google);
@@ -71,11 +72,13 @@ nav  a{
 }
 
 nav a:hover{
-    background-color: #f8fa78;
+    background-color: var(--cor3);
     padding: 10px;
     transition-duration: 1s;
     border-radius: 10px;
 }
+
+
 
 main{
     min-width: 300px;
@@ -134,10 +137,6 @@ main p{
     color: black;
 }
 
-/*Pag Dois*/
-
-
-/* container dos cards */
 
 .titulo_pagdois{
     font-size: 2m;
@@ -145,13 +144,10 @@ main p{
 
 .container{
     display:flex;
-    gap:20px;
     flex-wrap:wrap;
+    justify-content: center;
+    gap:20px;
 }
-
-
-
-
 
 
 .card{
