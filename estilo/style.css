@@ -124,6 +124,11 @@ nav a:hover{
     margin-left: 10px;
 }
 
+.btn-adotar:hover, .btn-saiba:hover{
+    background:#ce6001;
+
+}
+
 
 main{
     min-width: 300px;
@@ -175,6 +180,7 @@ main p{
     line-height: 2em;
 }
 
+/*Segunda pag */
 
 .segunda_pag{
     text-decoration: none;
@@ -205,14 +211,13 @@ main p{
     flex-direction:column;
 }
 
-/* imagem */
 .card img{
     width:100%;
     height:160px;
     object-fit:cover;
 }
 
-/* informações */
+
 .info{
     padding:15px;
 }
@@ -226,7 +231,7 @@ main p{
     color:#555;
 }
 
-/* botão */
+
 .botao{
     margin-top:10px;
     width:100%;
@@ -239,6 +244,79 @@ main p{
     cursor:pointer;
 }
 
-.botao:hover{
-    background:#e66d00;
+.botao:hover {
+    background:#db6702;
+}
+
+/*Sobre o Pet new life*/
+
+.sobre-petlove{
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 30px;
+}
+
+.subtitulo{
+    text-align: center;
+}
+.sobre-subtitulo{
+    margin-bottom: 25px;
+    color:#555;
+    text-align: center;
+
+}
+
+.sobre-cards{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.sobre-card{
+    background-color: white;
+    width: 280px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+}
+
+.sobre-card h3{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.sobre-card p {
+    text-align: center;
+    line-height: 1.6;
+    margin:0;
+}
+
+.indicadores{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap: wrap;
+}
+
+.indicador{
+   background-color: white;
+   width: 200px;
+   padding: 20px;
+   border-radius: 15px;
+   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.indicador h3{
+    font-size: 2em;
+    color: #7f7a00;
+
+
+}
+
+.indicador p{
+    text-align: center;
+    margin:0;
 }
