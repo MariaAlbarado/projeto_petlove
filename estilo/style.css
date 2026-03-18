@@ -6,9 +6,9 @@
 :root{
     --cor1: #CDD5C6;
     --cor2: #FBF2ED;
-    --cor2: #B7BCBF;
-    --cor3: #a17658;
-    --cor4: #fac893;
+    --cor3: #B7BCBF;
+    --cor4: #bd9980;
+    --cor5: #fac893;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Dogbangy';
@@ -54,7 +54,7 @@ header > p{
 nav{
     
     padding-bottom: 10px;
-    font-size: 1,5em;
+    font-size: 1.0em;
     text-align: center;
     border-bottom: 1px solid #ddd;
     padding-bottom: 15px;
@@ -125,8 +125,8 @@ nav a:hover{
 }
 
 .btn-adotar:hover, .btn-saiba:hover{
-    background:#ce6001;
-
+    background: #FA7F08;
+    
 }
 
 
@@ -140,6 +140,7 @@ main{
    border-bottom-left-radius: 10px;
    border-bottom-right-radius: 10px;
    box-shadow: 0px 0px 10px black;
+   text-align: justify;
     
 }
 
@@ -165,13 +166,6 @@ main h3{
     padding-top: 10px;
 }
 
-footer{
-    background-color: var(--cor4);
-    color: white;
-    text-align: center;
-    padding: 5px;
-    font-weight: bold;
-}
 
 main p{
     text-align: justify;
@@ -179,6 +173,8 @@ main p{
     margin: 15px 0px;
     line-height: 2em;
 }
+
+
 
 /*Segunda pag */
 
@@ -190,7 +186,7 @@ main p{
 
 
 .titulo_pagdois{
-    font-size: 2m;
+    font-size: 2em;
 }
 
 .container{
@@ -256,15 +252,22 @@ main p{
     margin-top: 30px;
 }
 
-.subtitulo{
-    text-align: center;
+.sobre-petlove h2{
+    margin-bottom: 10px;
 }
-.sobre-subtitulo{
-    margin-bottom: 25px;
-    color:#555;
-    text-align: center;
 
+.sobre-subtitulo{
+    text-align: center;
 }
+
+.subtitulo{
+    color: #666;
+    margin-bottom: 30px;
+    text-align: center;
+    text-align: justify;
+}
+
+
 
 .sobre-cards{
     display: flex;
@@ -319,4 +322,45 @@ main p{
 .indicador p{
     text-align: center;
     margin:0;
+}
+
+
+.como-funciona{
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 40px;
+}
+
+.como-funciona h2{
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.cards-como{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap: wrap;
+}
+
+.card-como{
+    background-color: white;
+    width: 260px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.685);
+    text-align: center;
+    transition: 0.3s;
+    
+}
+
+.card-como:hover{
+    transform: translateY(-5px);
+}
+
+.card-como h3{
+    font-size: 14px;
+    color:#555;
+    line-height: 1.6;
+    margin: 0;
 }

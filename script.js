@@ -11,7 +11,26 @@ function animarNumero(id, valorFinal, tempo) {
   }, tempo);
 }
 
-animarNumero("adotados", 120, 20);
-animarNumero("disponiveis", 45, 30);
-animarNumero("familias", 98, 25);
-animarNumero("parcerias", 12, 80);
+fetch("http://localhost:3000/api/info")
+.then(function(resposta){
+    return resposta.json();
+})
+.then(function (dados){
+
+    animarNumero("adotados",
+        dados.adotados,20);
+    animarNumero("disponiveis",
+        dados.disponiveis,30);
+        animarNumero("familias",
+        dados.familias_felizes,25);
+        animarNumero("parcerias",
+            dados.parceiros,80);
+
+        })
+    .catch(function (erro){
+        console.log("Erro ao buscar API:",
+            erro);
+    });
+
+    
+
