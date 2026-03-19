@@ -32,5 +32,4 @@ fetch("http://localhost:3000/api/info")
             erro);
     });
 
-    
-
+   
