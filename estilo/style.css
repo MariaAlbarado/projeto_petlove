@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitcount+Single+Ink:wght@100..900&family=Pacifico&family=Quicksand:wght@300..700&display=swap');
 
 
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+
+
+
 :root{
     --cor1: #CDD5C6;
     --cor2: #FBF2ED;
@@ -13,6 +17,7 @@
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Dogbangy';
     --fonte-google:"Bebas Neue", sans-serif;
+    --fonte-dog:"font-family: "Pinyon Script", cursive;"
 }
 
 *{
@@ -39,15 +44,15 @@ header{
 header > h1{
     text-align: center;
     font-size: 4em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     padding-top: 10px;
-    
+    margin-bottom: 20px;
 
 }
 
 header > p{
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.0em;
     font-weight: bold;
 }
@@ -64,7 +69,7 @@ nav  a{
      padding-left: 30px;
      text-decoration: none;
      padding: 20px;
-     color: var(--cor1);
+     color: black;
      font-weight: normal;
      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.788);
      font-family: var(--fonte-google);
@@ -73,7 +78,7 @@ nav  a{
 }
 
 nav a:hover{
-    background-color: #FA7F08;
+    background-color: #cea276;
     padding: 10px;
     transition-duration: 1s;
     border-radius: 10px;
@@ -88,6 +93,14 @@ nav a:hover{
     margin-top: 30px;
 }
 
+@media (max-width:768px){
+    .cta{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+
 .cta-texto{
     max-width: 500px;
 }
@@ -98,7 +111,7 @@ nav a:hover{
 }
 
 .cta-texto p{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .cta-img img{
@@ -113,6 +126,7 @@ nav a:hover{
     padding: 10px 20px;
     border-radius: 8px;
     text-decoration: none;
+    
 }
 
 .btn-saiba{
@@ -348,7 +362,7 @@ main p{
     width: 260px;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.685);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.747);
     text-align: center;
     transition: 0.3s;
     
