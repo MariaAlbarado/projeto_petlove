@@ -21,7 +21,7 @@
         <a href="pets.html">Cachorros</a>
          <a href="cats.html">Gatos</a>
         <a href="cadastro.html">Cadastro</a>
-        <a href="todos.html" >Todos</a>
+        
         
         
     </nav>
@@ -29,45 +29,72 @@
     <main>
 
         <div class="container_formulario">
-        <h1>Formulário de Adoção</h1>
-        <p>Preencha os dados abaixo para iniciar o processo de adoção</p>
+        <h1 class="formulario_titulo">Formulário de Adoção</h1>
+        <p class="formulario_titulo_p">Preencha os dados abaixo para iniciar o processo de adoção</p>
 
-        <form>
+        
 
-            <form id="formAdocao">
+        <form id="formAdocao">
+        
+        <div class:="linha">
+            <div class="campo">
+                <label>Nome completo *</label>
+                <input type="text" id="nome" required>
+            </div>
 
-    <input type="text" id="nome" placeholder="Nome Completo" required>
+            <div class="campo">
+                <label>Telefone/WhatsApp *</label>
+                <input type="tel" id="telefone" required>
+            </div>
 
-    <input type="tel" id="telefone" placeholder="Telefone" required>
+            <div class="campo">
+                <label>Tipo de moradia *</label>
+                <select id="tipoMoradia" required>
+                  <option value="">Selecione...</option>
 
-    <select id="tipoMoradia" required>
-        <option value="">Selecione...</option>
-        <option value="casa">Casa</option>
-        <option value="apartamento">Apartamento</option>
-        <option value="sitio">Sítio/Chácara</option>
-    </select>
+                  <option value="casa">Casa</option>
+                 <option value="apartamento">Apartamento</option>
+                 </select>
+                 </div>
 
-    <select id="condicaoImovel" required>
-        <option value="">Selecione...</option>
-        <option value="proprio">Próprio</option>
-        <option value="alugado">Alugado</option>
-        <option value="familiares">Casa de Familiares</option>
-    </select>
+                 <div class="linha">
+                   <div class="campo">
+                    <label>Condição do Imóvel * </label>
+                    <select id="condicaoImovel" required>
+                      <option value="">Selecione...</option>
+                      <option value="proprio">Próprio</option>
+                      <option value="alugado">Alugado</option>
+                      </select>
+                    </div>
 
-    <input type="number" id="numero" min="1" required>
+                    <div class="campo">
+                 <label>Quantas pessoas moram na casa? *</label>
+                  <input type="number" id="numeroPessoas" required>
+                  </div>
+                  </div>
 
-    <textarea id="motivo" required></textarea>
+                  <div class="campo">
+                <label>Por que deseja adotar esses pets?</label>
+                <textarea id="motivo" required></textarea>
+                </div>
+                <label class="checkbox">
+                    <input type="checkbox" id="termos" required>
+                     li e aceito os termos
+                </label>
 
-    <label>
-        <input type="checkbox" id="termos" required>
-        Aceito os termos
-    </label>
+                <button type="submit">Enviar Solicitação</button>
 
-    <button type="submit">Enviar</button>
+                </form>
 
-</form>
+                  
 
-        </form>
+
+                        
+
+    
+        
+
+        
     </div>
     </main>
 </body>

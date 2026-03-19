@@ -34,20 +34,20 @@ fetch("http://localhost:3000/api/info")
 
 
 
-    
-   document.getElementById("formAdocao").addEventListener("submit", function(e) {
-    e.preventDefault(); 
+    document.getElementById("formAdocao").addEventListener("submit", function(e) {
+    e.preventDefault();
 
     const dados = {
-        nomeCompleto: document.getElementById("nome").value,
+        nome: document.getElementById("nome").value,
         telefone: document.getElementById("telefone").value,
         tipoMoradia: document.getElementById("tipoMoradia").value,
         condicaoImovel: document.getElementById("condicaoImovel").value,
-        numeroResidentes: parseInt(document.getElementById("numero").value),
-        motivoAdocao: document.getElementById("motivo").value
+        numeroPessoas: document.getElementById("numeroPessoas").value,
+        motivo: document.getElementById("motivo").value,
+        termos: document.getElementById("termos").checked
     };
 
-    fetch("/api/adoptions", {
+    fetch("/api/adoptions", { 
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -56,11 +56,12 @@ fetch("http://localhost:3000/api/info")
     })
     .then(response => response.json())
     .then(data => {
-        alert("Solicitação enviada com sucesso!");
-        console.log(data);
+        alert("Formulário enviado com sucesso!");
+        document.getElementById("formAdocao").reset();
     })
     .catch(error => {
         console.error("Erro:", error);
-        alert("Erro ao enviar!");
+        alert("Erro ao enviar.");
     });
 });
+

@@ -453,75 +453,84 @@ main p{
 
 /*pag formulario*/
 
-.container_formulario {
-    width: 400px;
-    margin: 50px auto;
-    background: #fff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+
+#formAdocao{
+    max-width: 900px;
+    margin:  40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
 }
 
-h1 {
+
+.formulario_titulo{
     text-align: center;
-    margin-bottom: 10px;
+    font-size: 50px;
+    color: #fc3588de;
+
+
 }
 
-p {
+.formulario_titulo_p{
     text-align: center;
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 20px;
+    font-size: 17px;
+
 }
 
-form {
-
+.linha{
     display: flex;
+    gap:20px;
+}
+
+.campo{
+    display:flex;
     flex-direction: column;
-    gap:20px
+    flex: 1;
+    margin-bottom: 15px;
 }
 
-label {
-    margin-top: 10px;
+campo label{
+    margin-bottom: 8px;
     font-weight: bold;
+
+
 }
 
-input, select, textarea {
-    margin-top: 5px;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-}
-
-textarea {
-    resize: none;
-    height: 80px;
-}
-
-.termos {
-    display: flex;
-    align-items: center;
-    margin-top: 15px;
-    font-size: 14px;
-}
-
-.termos input {
-    margin-right: 8px;
-}
-
-button {
-    margin-top: 20px;
+.campo input, .campo select, .campo textarea{
     padding: 12px;
-    border: none;
-    border-radius: 25px;
-    background: #ff4d88;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
+    border-radius: 8px;
+    border:  1px solid #ccc;
+
 }
 
-button:hover {
-    background: #e6005c;
+textarea{
+    height: 120px;
 }
+
+.checkbox {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+button{
+    width: 300px;
+    margin: auto;
+    display: block;
+    padding: 14px;
+    border-radius: 25px;
+    border: none;
+    background: pink;
+    font-weight: bold;
+    cursor:  pointer;
+}
+
+@media (max-width: 768px){
+    .linha{
+        flex-direction: column;
+    }
+}
+
+
+
