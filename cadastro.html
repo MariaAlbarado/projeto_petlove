@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,9 +21,54 @@
         <a href="pets.html">Cachorros</a>
          <a href="cats.html">Gatos</a>
         <a href="cadastro.html">Cadastro</a>
-        <a href="todos.html" >Cadastro</a>
+        <a href="todos.html" >Todos</a>
         
         
     </nav>
+
+    <main>
+
+        <div class="container_formulario">
+        <h1>Formulário de Adoção</h1>
+        <p>Preencha os dados abaixo para iniciar o processo de adoção</p>
+
+        <form>
+
+            <form id="formAdocao">
+
+    <input type="text" id="nome" placeholder="Nome Completo" required>
+
+    <input type="tel" id="telefone" placeholder="Telefone" required>
+
+    <select id="tipoMoradia" required>
+        <option value="">Selecione...</option>
+        <option value="casa">Casa</option>
+        <option value="apartamento">Apartamento</option>
+        <option value="sitio">Sítio/Chácara</option>
+    </select>
+
+    <select id="condicaoImovel" required>
+        <option value="">Selecione...</option>
+        <option value="proprio">Próprio</option>
+        <option value="alugado">Alugado</option>
+        <option value="familiares">Casa de Familiares</option>
+    </select>
+
+    <input type="number" id="numero" min="1" required>
+
+    <textarea id="motivo" required></textarea>
+
+    <label>
+        <input type="checkbox" id="termos" required>
+        Aceito os termos
+    </label>
+
+    <button type="submit">Enviar</button>
+
+</form>
+
+        </form>
+    </div>
+    </main>
 </body>
 </html>
